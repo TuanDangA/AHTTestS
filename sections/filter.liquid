@@ -1,0 +1,22 @@
+<!-- <script defer src="{{ 'filter.js' | asset_url }}"></script> -->
+<script defer src="{{ 'blog-list.js' | asset_url }}"></script>
+
+<!-- <div id="search-landing">
+</div> -->
+<div id="blog-list"></div>
+{% schema %} 
+    { 
+        "name": "Input Filter", 
+        "settings": [ 
+            { 
+                "type": "text", 
+                "id": "title", 
+                "default": "Customers also bought", 
+                "label": "Title" 
+            } 
+        ], 
+        "presets": [{ 
+            "name": "Input Filter" 
+        }] 
+    } 
+{% endschema %}
